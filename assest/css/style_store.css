@@ -1,0 +1,290 @@
+.product__store {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    min-height: 400px;
+}
+.product__store-item-list, .product__store-item-list-top {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.product__store-item, .product__store-item-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    
+}
+
+.w-30pt {
+    width: 30%;
+}
+
+.product__store-image, .product__store-image-top {
+    width: 80%;
+    height: 75%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hth-image {
+    background-image: url("../images/Biscotti\ hạt\ tổng\ hợp\ -\ ảnh\ sp.jpg");
+}
+
+.matcha-image {
+    background-image: url("../images/Biscotti\ Matcha\ -\ ảnh\ sp.jpg");
+}
+
+.chocolate-image {
+    background-image: url("../images/Biscotti\ socola\ -\ ảnh\ sp.jpg");
+}
+
+.granola-image {
+    background-image: url("../images/Granola\ -\ ảnh\ sp.jpg");
+}
+
+.hn-image {
+    background-image: url("../images/Hạnh\ nhân.jpg");
+}
+
+.macca-image {
+    background-image: url("../images/macca.jpg");
+}
+
+.ym-image {
+    background-image: url("../images/Yến\ mạch.jpg");
+}
+
+.bmd-image {
+    background-image: url("../images/bmd.png");
+}
+
+.bvd-image {
+    background-image: url("../images/bd.jpg");
+}
+
+.product__store-image-text, .product__store-image-text-top {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 15%;
+    font-size: 1.2rem;
+    background-color: aliceblue;
+    font-weight: 200;
+    line-height: 55px;
+    display: none;
+}
+
+.hth-image:hover {
+    background-image: url("../images/Biscotti\ hạt\ tổng\ hợp\ -\ ảnh\ sp1.jpg");;
+}
+
+.matcha-image:hover {
+    background-image: url("../images/Biscotti\ Matcha\ -\ ảnh\ sp1.jpg");;
+}
+
+.chocolate-image:hover {
+    background-image: url("../images/Biscotti\ socola\ -\ ảnh\ sp1.jpg");;
+}
+
+.granola-image:hover {
+    background-image: url("../images/Granola\ -\ ảnh\ sp1.jpg");;
+}
+
+.hn-image:hover {
+    background-image: url("../images/Hạnh\ nhân2.jpg");;
+}
+
+.macca-image:hover {
+    background-image: url("../images/macca1.jpg");;
+}
+
+.ym-image:hover {
+    background-image: url("../images/Yến\ mạch1.jpg");;
+}
+
+.bmd-image:hover {
+    background-image: url("../images/bmd.png");;
+}
+
+.bvd-image:hover {
+    background-image: url("../images/bd.jpg");
+}
+
+.product__store-image:hover .product__store-image-text {
+    display: block;
+}
+
+.product__store-image-top:hover .product__store-image-text-top{
+    display: block;
+}
+
+.product__store-item-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.product__store-item-btn, .product__store-item-btn-top {
+    width: 60%;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.product__store-item-btn:hover {
+    opacity: 0.7;
+}
+
+.product__store-item-btn-top:hover {
+    opacity: 0.7;
+}
+
+.product__store-item-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.product__store-item-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: blue;
+}
+
+.cart {
+    position: fixed;
+    max-height: 100%;
+    width: 30%;
+    right: 0;
+    top: 0;
+    background-color: brown;
+    z-index: 10;
+}
+
+.cart-item-list {
+    width: 100%;
+    height: 515px;
+    overflow-y: overlay;
+}
+
+.item-cart {
+    width: 90%;
+}
+
+.cart-item-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.cart-item-list::-webkit-scrollbar-thumb {
+    background-color: #7b7d7f;
+    border: 5px solid #fff;
+    border-radius: 10rem;
+}
+
+.cart-item-list::-webkit-scrollbar-track {
+    position: absolute;
+    right: -3rem;
+    top: -50rem;
+    background: transparent;
+}
+
+.no-item {
+    margin: auto;
+}
+
+.text-fun {
+    font-size: 1rem;
+    margin: 40px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-pay {
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn-pay-container {
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: calc(100% - height);
+}
+
+.h0 {
+    height: 0;
+}
+
+.delete, .delete-in-cart {
+    cursor: pointer;
+    width: 5%;
+    height: 15px;
+    z-index: 10;
+}
+
+.total-cost {
+    text-align: end;
+    width: 100%;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 10px 0px;
+}
+
+.cart-title-text {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2.4rem;
+    background-color: antiquewhite;
+}
+
+.cart-icon {
+    position: absolute;
+    left: 35px;
+    top: 42px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.move-right {
+    animation: mover 1s linear;
+}
+
+.move-back {
+    animation: movel 1s linear;
+}
+
+@keyframes mover{
+    from {right: 0px;}
+    to {right: -500px}
+}
+
+@keyframes movel{
+    from {right: -500px;}
+    to {right: 0px}
+}
+
+.choose-item {
+    position: fixed;
+    width: 300px;
+    height: 500px;
+    top: 100px;
+    left: 100px;
+}

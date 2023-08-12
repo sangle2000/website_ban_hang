@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 163px;
+    width: 100%;
+    background-color: bisque;
+    position: relative;
+}
+
+.page_list {
+    list-style: none;
+    width: 400px;
+    display: flex;
+    padding: 0;
+    margin: auto;
+    padding-top: 120px;
+    justify-content: space-between;
+}
+
+.line_seperate {
+    border-left: 1px solid black;
+    padding-left: 25px;
+}
+
+.trangchu, .gioithieu, .cuahang, .lienhe {
+    cursor: pointer;
+}
+
+.trangchu:hover, .gioithieu:hover, .cuahang:hover, .lienhe:hover {
+    color: red;
+}
+
+.form {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.div{
+    left: 50% - calc(lenght/2);
+}

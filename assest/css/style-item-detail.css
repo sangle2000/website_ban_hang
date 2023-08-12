@@ -1,0 +1,148 @@
+.item-detail-list {
+    margin: 50px 0;
+}
+
+.item-detail {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 70%;
+    margin: auto;
+}
+
+.item-detail-description {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.item-detail-description-image {
+    width: 100%;
+}
+
+.item-detail-description-text {
+    margin: 20px 0;
+}
+
+.text-list {
+    margin-left: 40px;
+} 
+
+.font-12 {
+    font-size: 1.2rem;
+}
+
+.item-detail-choose {
+    width: 45%;
+}
+
+.item-detail-choose-title {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.item-detail-choose--price {
+    color: blue;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.select-weight {
+    padding: 10px 0;
+}
+
+.weight-list {
+    width: 80%;
+    height: 40px;
+}
+
+.select-quantity-input {
+    width: 20%;
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+.select-quantity-btn {
+    margin-top: 5px;
+    height: 30px;
+}
+
+.input-quantity {
+    width: 50px;
+    height: 100%;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.select-quantity-down, .select-quantity-up {
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.paragraph {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.submit-item-btn {
+    position: absolute;
+    margin-top: 50px;
+    right: 90px;
+    height: 50px;
+    width: 200px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.quick-choose-item {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    height: 500px;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px; /* Negative half of height. */
+    margin-left: -350px; /* Negative half of width. */
+    background-color: #c45500;
+    opacity: 1;
+}
+
+.quick-image {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.quick-choose {
+    margin-top: 20px;
+}
+
+.quick-choose > .item-detail-choose-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 80%;
+}
+
+.quick-choose-item-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    z-index: 1;
+}
+
+.black {
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 0.2;
+}
