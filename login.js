@@ -24,7 +24,6 @@ submitLogin.onclick = () => {
             }
         }
 
-    
         localStorage.setItem('user', JSON.stringify(userData));
 
         if (!checkActive) {

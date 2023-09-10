@@ -1,4 +1,5 @@
 const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
 
 const userName = $('.user-name__input')
 const password = $('.password__input')
@@ -17,13 +18,10 @@ const storedData = localStorage.getItem('user');
 var userData = JSON.parse(storedData);
 // console.log("User Data",userData)
 
-console.log(userData)
-
 submit.onclick = () => {
 
     if(userData !== null){
         for(let i = 0; i < userData.length; i++){
-
             if(userData[i]['user-name'] === userName.value){
                 errorUsername.classList.add('active-error')
                 check_exist = true
